@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Lab2-1.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>Form Validation</header>
+    <form action="#">
+        <label>Name</label>
+        <input type="text"  placeholder="UserName" required>
+        <br>
+        <label>Email</label>
+        <input type="email"  placeholder="UserName@gmail.com" required>
+        <br>
+        <label>Password</label>
+        <input type="password"  placeholder="Password" minlength="8">
+        <br>
+        <label>Salary</label>
+        <input type="range" name="salaryVal" class="salary" max="200" step="50" oninput="salary.value = salaryVal.value+'$'">
+        <output name="salary"></output>
+        <br>
+        <label>Age</label >
+        <input type="number" min="21" step="1" placeholder="Age">
+        <br>
+        <div class="submitbutton">
+            <input type="submit">
+        </div>
+    </form>
+    
+</body>
+</html>
